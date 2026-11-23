@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>DevScale — AI Full-Stack Visual Course &amp; Simulator</title>
+    <meta name="description" content="Interactive 0-to-Mastery AI Full-Stack visual course &amp; simulator: DSA, Backend Internals, System Design, and LLM Engineering with animated isometric diagrams, live parameter controls, and playable challenges." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#f4ebe0" />
+    <script>
+      try {
+        if (JSON.parse(localStorage.getItem('ds:theme')) === 'dark') {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch (e) {}
+      var w = innerWidth, h = innerHeight;
+      document.documentElement.dataset.layout =
+        w >= 1200 && h >= 560 ? 'desktop' : w >= 960 && h >= 600 ? 'tablet' : 'stack';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

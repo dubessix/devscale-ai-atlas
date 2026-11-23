@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.cache/
+.local/
+.npm/
+.vite/
+.env
+.env.*
+devscale-ai-atlas-deploy.tar.gz
+.DS_Store
